@@ -24,4 +24,4 @@ https://github.com/SHarpreet89
 
 ## Screenshot
 
-![Alt text](./assets/Images/Application%20Image.png)
+![Application Screenshot](./Assets/Images/Application%20Image.png)
