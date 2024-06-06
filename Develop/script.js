@@ -9,13 +9,14 @@ const collectEmployees = function() {
   // Prompt the user for the employee's first name
   let addNextEmployee = true;
 
+  // While the user would like to add another employee, collect the data for the next employee and add it to
   while (addNextEmployee) {
     let firstName = window.prompt("Enter the employee's first name:");
     if (firstName === null || firstName.trim() === "") {
       firstName = window.prompt("First Name cannot be blank. Please enter the employee's first name again or cancel to abort:");
       if (firstName === null || firstName.trim() === "") {
         window.alert("First Name cannot be blank - Aborting employee entry");
-        return employeesData; // Return the current data
+        return employeesData; // Return the current data at end of each if statement, to prevent data loss in case of cancel.
       }
     }
 
@@ -24,7 +25,7 @@ const collectEmployees = function() {
       lastName = window.prompt("Last Name cannot be blank. Please enter the employee's last name again or cancel to abort:");
       if (lastName === null || lastName.trim() === "") {
         window.alert("Last Name cannot be blank - Aborting employee entry");
-        return employeesData; // Return the current data
+        return employeesData; // Return the current data at end of each if statement, to prevent data loss in case of cancel.
       }
     }
 
@@ -33,7 +34,7 @@ const collectEmployees = function() {
       salary = window.prompt("Salary must be a number or zero. Please enter the employee's salary again or cancel to abort:");
       if (salary === null || isNaN(Number(salary))) {
         window.alert("Salary must be a number - Aborting employee entry");
-        return employeesData; // Return the current data
+        return employeesData; // Return the current data at end of each if statement, to prevent data loss in case of cancel.
       }
     } else {
       salary = Number(salary);
@@ -41,8 +42,11 @@ const collectEmployees = function() {
 
     // Create a new employee object and add it to the employees array
     const newEmployee = { firstName, lastName, salary };
+
+    //push the new employee object to the employees array
     employeesData.push(newEmployee);
 
+    //Ask the user if they would like to add another employee
     addNextEmployee = window.confirm("Would you like to add another employee?");
   }
   return employeesData;
@@ -69,12 +73,6 @@ const displayAverageSalary = function(employeesArray) {
     console.log(`The average salary of all employees is: ${averageSalary.toLocaleString("en-US", { style: "currency", currency: "AUD" })}`);
   }
 }
-
-/*
-  ====================
-  STARTER CODE
-  Do not modify any of the code below this line:
-*/
 
 // Display employee data in an HTML table
 const displayEmployees = function(employeesArray) {

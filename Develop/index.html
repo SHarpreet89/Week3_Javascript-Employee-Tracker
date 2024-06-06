@@ -10,32 +10,47 @@
 </head>
 
 <body>
+  <!-- Main wrapper for the content -->
   <div class="wrapper">
+    
+    <!-- Header section with the main title -->
     <header>
       <h1>Employee Payroll Tracker</h1>
     </header>
+    
+    <!-- Card container for the employee roster -->
     <div class="card">
+      
+      <!-- Card header with a sub-title -->
       <div class="card-header">
        <h2>Employee Roster</h2>
       </div>
+      
+      <!-- Card body containing the employee table -->
       <div class="card-body">
        <table>
         <thead>
           <tr>
+            <!-- Table headers for employee details -->
             <th>First Name</th>
             <th>Last Name</th>
             <th>Salary</th>
           </tr>
         </thead>
+        <!-- Table body where employee data will be dynamically inserted -->
         <tbody id="employee-table">
         </tbody>
        </table>
       </div>
+      
+      <!-- Card footer with a button to add employees -->
       <div class="card-footer">
         <button id="add-employees-btn" class="btn">ADD EMPLOYEES</button>
       </div>
     </div>
   </div>
+  
+  <!-- Link to the external JavaScript file -->
   <script src="script.js"></script>
 </body>
 
