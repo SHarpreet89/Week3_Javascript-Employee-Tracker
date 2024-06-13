@@ -109,7 +109,7 @@ tbody tr:nth-child(even) {
 /* Style the .btn element with no border, background color, shadow, text color, display, font size, line height, margin, padding, text alignment, and cursor */
 .btn {
   border: none;
-  background-color: pink; /* Changed to pink */
+  background-color: blue; /* Changed to blue */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px, rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
