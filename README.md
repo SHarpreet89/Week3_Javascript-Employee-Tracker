@@ -18,6 +18,10 @@ So that I can see my employees' payroll data and properly budget for the company
 - Upon clicking cancel, the series of prompts to add an employee are displayed agian.
 - When an entry is cancelled, the employee data is alphabetically sorted by last name and displayed on the page. 
 
+## Website Link
+
+https://sharpreet89.github.io/Week3_Javascript-Employee-Tracker/
+
 ## Contact me
 
 https://github.com/SHarpreet89
