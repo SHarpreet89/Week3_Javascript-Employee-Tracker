@@ -7,9 +7,9 @@ As a nice little additional feature, it also picks a random employee from the li
 
 ## User Story
 
-AS A payroll manager
-I WANT AN employee payroll tracker
-SO THAT I can see my employees' payroll data and properly budget for the company
+As a payroll manager
+I want an employee payroll tracker
+So that I can see my employees' payroll data and properly budget for the company
 
 ## Acceptance Criteria
 
